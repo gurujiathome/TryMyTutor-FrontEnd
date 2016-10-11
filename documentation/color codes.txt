@@ -1,0 +1,3 @@
+blue color used: 3cadd4
+
+blue background color used for payment page: 78a1b5
