@@ -22,6 +22,7 @@
 			<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
 		</noscript>
 </head>
+
 <body class="landing">
     <!-- Header -->
     <header id="header">
@@ -31,139 +32,59 @@
                 <li><a href="http://trymytutor.com/blog" class="hvr-buzz">Blog</a></li>
                 <li><a href="#howitworks" class="hvr-buzz ">How it works?</a></li>
                 <li><a href="register_tutor.html" class="hvr-buzz button2">Become a Tutor</a></li>
-                <li>
-
-                  <a class="hvr-buzz" id="myBtn">Login</a>
-                  <div id="myModal" class="modal">
-                    <div class="modal-content">
-                          <span class="close">x</span>
-                        <h2 class="cd-headline clip" style="margin-bottom: 25px;">
-                            <b class="is-visible">Login to continue</b> </h2>
-                        <div id="wrapper">
-                            <form>
-                                <div class="input-register">
-                                    <input class="input-field-login" placeholder="Email" name="subject" type="email" tabindex="1">
-                                </div>
-                                <div class="input-register">
-                                    <input class="input-field-login" placeholder="Password" name="password" type="password" tabindex="1">
-                                </div>
-                                <div class="col-submit-modal">
-                                    <a href="#" class="loginbtn">Login</a>&nbsp&nbspor&nbsp<a href="register.html"> Signup</a>
-                                </div>
-                            </form>
-                        </div>
-                      </div>
-                    </div>
-
-
-
-
-
             </ul>
         </nav>
     </header>
 
-    <!-- Banner -->
-    <section id="banner">
-        <section class="cd-intro">
-            <h2 class="cd-headline slide">
-                <span>Learn</span>
-                <span class="cd-words-wrapper">
-					<b class="is-visible">Maths</b>
-					<b>Science</b>
-					<b>English</b>
-					<b>Hindi</b>
-					<b>Physics</b>
-					<b>Chemistry</b>
-					<b>Biology</b>
-					<b>History</b>
-                    <b>Business Studies</b>
-					<b>Anything</b>
-				</span>
-            </h2>
-            <h3>
-                <span>Search for Tutor</span>
-
-                <div id="wrapper">
-
-                    <form>
-                        <input class="input-field" placeholder="Subject" name="subject" tabindex="1">
-                        <input class="input-field" placeholder="Grade" name="company" tabindex="2">
-                        <input class="input-field" placeholder="PIN" name="PIN" tabindex="3">
-
-                        <div class="col-submit">
-                            <a href="search.html" class="submitbtn">Search</a>
-                        </div>
-                    </form>
-                </div>
-
-
-
-        </section>
-
-        <!-- One -->
-        <section id="one" class="wrapper style1 special">
-            <div class="container" id="howitworks">
-                <header class="major">
-                    <h-main>How it works?</h-main><br>
-                    <p>Hire a trusted professional in 3 simple steps!</p>
-                </header>
-                <div class="row 150%">
-                    <div class="4u 12u$(medium)">
-                        <section class="box">
-                            <img src="icons/search.png" width="45%"></img>
-                            <h3>Search</h3>
-                            <p>Just fill in your requirement, use our filters to search from the largest pool of home tutors in Delhi-NCR.</p>
-                        </section>
+    <section id="banner-login">
+      <section class="cd-intro-login">
+      <button id="myBtn">Open</button>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+              <span class="close">x</span>
+            <h2 class="cd-headline clip" style="margin-bottom: 25px;">
+                <b class="is-visible">Login to continue</b> </h2>
+            <div id="wrapper">
+                <form>
+                    <div class="input-register">
+                        <input class="input-field-login" placeholder="Email" name="subject" type="email" tabindex="1">
                     </div>
-                    <div class="4u 12u$(medium)">
-                        <section class="box">
-                            <img src="icons/select.png" width="45%"></img>
-                            <h3>Select</h3>
-                            <p>Choose teachers from the search result, request a demo, the teacher will and teach.</p>
-                        </section>
+                    <div class="input-register">
+                        <input class="input-field-login" placeholder="Password" name="password" type="password" tabindex="1">
                     </div>
-                    <div class="4u$ 12u$(medium)">
-                        <section class="box">
-                            <img src="icons/learn.png" width="45%"></img>
-                            <h3>Learn </h3>
-                            <p>Pay your fee and the learning starts instantly. Our add -on services will make sure you can keep a track of the learning.</p>
-                        </section>
+                    <div class="col-submit">
+                        <a href="#" class="loginbtn">Login</a>
                     </div>
-                </div>
+                </form>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <!-- Three -->
+      <script>
+      // Get the modal
+      var modal = document.getElementById('myModal');
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      // When the user clicks on the button, open the modal
+      btn.onclick = function() {
+          modal.style.display = "block";
+      }
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
 
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+      </script>
         <!-- Footer -->
-        <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
 
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on the button, open the modal
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-        </script>
         <footer id="footer">
             <div class="container">
                 <section class="links">
